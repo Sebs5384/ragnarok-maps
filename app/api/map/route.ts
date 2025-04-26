@@ -52,3 +52,5 @@ async function GET(req: Request) {
         });
     };
 };
+
+export default GET;
