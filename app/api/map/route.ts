@@ -2,7 +2,7 @@ import { createCanvas, loadImage } from "canvas";
 import { NextResponse } from "next/server";
 import path from "path";
 
-async function GET(req: Request) {
+export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
     const x = searchParams.get("x");
     const y = searchParams.get("y");
@@ -52,5 +52,3 @@ async function GET(req: Request) {
         });
     };
 };
-
-export default GET;
