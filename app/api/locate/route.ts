@@ -4,21 +4,24 @@ import path from "path";
 
 export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
+    const map = searchParams.get("map");
     const x = searchParams.get("x");
     const y = searchParams.get("y");
 
     const parsedX = parseInt(x || "");
     const parsedY = parseInt(y || "");
+    
+    if(!map) {
+        return NextResponse.json({ error: "Invalid map"}, { status: 400 });
+    };
 
     if(isNaN(parsedX) || isNaN(parsedY)) {
         return NextResponse.json({ error: "invalid coordinates" }, { status: 400 });
     };
 
     try {
-        const mapPath = path.join(process.cwd(), "public", "gonryun.png");
-        const markerPath = path.join(process.cwd(), "public", "PROSEN.png");
+        const mapPath = path.join(process.cwd(), "public", `${map}.png`);
         const mapImage = await loadImage(mapPath);
-        const markerImage = await loadImage(markerPath);
 
         const canvas = createCanvas(mapImage.width, mapImage.height);
         const ctx = canvas.getContext("2d");
@@ -32,7 +35,10 @@ export async function GET(req: Request) {
         const dotY = (mapHeight - 1 - parsedY) * scaleY;
 
         ctx.drawImage(mapImage, 0, 0);
-        ctx.drawImage(markerImage, dotX - 12.5, dotY - 12.5, 25, 25);
+        ctx.beginPath();
+        ctx.arc(dotX, dotY, 3, 0, Math.PI * 2);
+        ctx.fillStyle = "red";
+        ctx.fill();
 
         const buffer = canvas.toBuffer("image/png");
 
