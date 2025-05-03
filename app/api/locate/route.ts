@@ -3,24 +3,23 @@ import { NextResponse } from "next/server";
 import path from "path";
 
 export async function GET(req: Request) {
-    const { searchParams } = new URL(req.url);
-    const map = searchParams.get("map");
-    const x = searchParams.get("x");
-    const y = searchParams.get("y");
-
-    const parsedX = parseInt(x || "");
-    const parsedY = parseInt(y || "");
-    
-    if(!map) {
-        return NextResponse.json({ error: "Invalid map"}, { status: 400 });
-    };
-
-    if(isNaN(parsedX) || isNaN(parsedY)) {
-        return NextResponse.json({ error: "invalid coordinates" }, { status: 400 });
-    };
-
     try {
-        const mapPath = path.join(process.cwd(), "public", `${map}.png`);
+        const { searchParams } = new URL(req.url);
+        const map = searchParams.get("map");
+        const x = searchParams.get("x");
+        const y = searchParams.get("y");
+
+        const parsedX = parseInt(x || "");
+        const parsedY = parseInt(y || "");
+    
+        if(!map) {
+            return NextResponse.json({ error: "Invalid map"}, { status: 400 });
+        };
+
+        if(isNaN(parsedX) || isNaN(parsedY)) {
+            return NextResponse.json({ error: "invalid coordinates" }, { status: 400 });
+        };
+        const mapPath = path.join(process.cwd(), "public", "maps", `${map}.png`);
         const mapImage = await loadImage(mapPath);
 
         const canvas = createCanvas(mapImage.width, mapImage.height);
