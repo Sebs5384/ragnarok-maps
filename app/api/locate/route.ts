@@ -25,8 +25,8 @@ export async function GET(req: Request) {
         const canvas = createCanvas(mapImage.width, mapImage.height);
         const ctx = canvas.getContext("2d");
 
-        const mapWidth = 300;
-        const mapHeight = 300;
+        const mapWidth = 280;
+        const mapHeight = 280;
         const scaleX = canvas.width / mapWidth;
         const scaleY = canvas.height / mapHeight;
 
