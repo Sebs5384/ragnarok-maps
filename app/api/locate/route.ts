@@ -1,6 +1,5 @@
-import { createCanvas, loadImage } from "canvas";
 import { NextResponse } from "next/server";
-import path from "path";
+import { readJsonFile, loadLocalImage, markMapImage } from "../../utils/general";
 
 export async function GET(req: Request) {
     try {
@@ -19,29 +18,23 @@ export async function GET(req: Request) {
         if(isNaN(parsedX) || isNaN(parsedY)) {
             return NextResponse.json({ error: "invalid coordinates" }, { status: 400 });
         };
-        const mapPath = path.join(process.cwd(), "public", "maps", `${map}.png`);
-        const mapImage = await loadImage(mapPath);
+        const mapImage = await loadLocalImage("maps", `${map}.png`);
+        const mapMeta = readJsonFile("maps-meta.json");
+        const mapData = mapMeta.find((m: { name: string }) => m.name === map);
+        const markedMap = markMapImage(
+            mapImage,
+            parsedX,
+            parsedY,
+            mapImage.width,
+            mapImage.height,
+            mapData.width,
+            mapData.height,
+            "red",
+            "image/png",
+            "2d"
+        );
 
-        const canvas = createCanvas(mapImage.width, mapImage.height);
-        const ctx = canvas.getContext("2d");
-
-        const mapWidth = 280;
-        const mapHeight = 280;
-        const scaleX = canvas.width / mapWidth;
-        const scaleY = canvas.height / mapHeight;
-
-        const dotX = parsedX * scaleX;
-        const dotY = (mapHeight - 1 - parsedY) * scaleY;
-
-        ctx.drawImage(mapImage, 0, 0);
-        ctx.beginPath();
-        ctx.arc(dotX, dotY, 3, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
-        ctx.fill();
-
-        const buffer = canvas.toBuffer("image/png");
-
-        return new NextResponse(buffer, {
+        return new NextResponse(markedMap, {
             status: 200,
             headers: {
                 "Content-Type": "image/png",
