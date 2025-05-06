@@ -1,0 +1,657 @@
+[
+    {
+        "name": "alb2trea",
+        "width": 140,
+        "height": 140
+    },
+    {
+        "name": "ama_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "amatsu",
+        "width": 316,
+        "height": 316
+    },
+    {
+        "name": "anthell",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "aru_gld",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ayo_dun01",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "ayo_fild01",
+        "width": 360,
+        "height": 360
+    },
+    {
+        "name": "ayo_fild02",
+        "width": 360,
+        "height": 300
+    },
+    {
+        "name": "ayothaya",
+        "width": 320,
+        "height": 320
+    },
+    {
+        "name": "beach_dun2",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "beach_dun3",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "bra_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "bra_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "brasilis",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild04",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild05",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild06",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild08",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "cmd_fild09",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "dew_dun01",
+        "width": 360,
+        "height": 360
+    },
+    {
+        "name": "dew_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "dewata",
+        "width": 340,
+        "height": 340
+    },
+    {
+        "name": "dic_dun02",
+        "width": 240,
+        "height": 240
+    },
+    {
+        "name": "ein_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "gef_dun00",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "gef_dun01",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "gef_dun02",
+        "width": 260,
+        "height": 260
+    },
+    {
+        "name": "gef_fild00",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gef_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gef_fild10",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gef_fild11",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gef_fild12",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gl_cas01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gl_chyard",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "gon_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "gon_dun03",
+        "width": 240,
+        "height": 300
+    },
+    {
+        "name": "gon_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "gonryun",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "hu_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "hu_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "hu_fild06",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ice_dun01",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "ice_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "ice_dun03",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "in_sphinx2",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "iz_dun02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "iz_dun05",
+        "width": 280,
+        "height": 280
+    },
+    {
+        "name": "izlu2dun",
+        "width": 216,
+        "height": 232   
+    },
+    {
+        "name": "jawaii",
+        "width": 340,
+        "height": 360
+    },
+    {
+        "name": "kh_dun02",
+        "width": 240,
+        "height": 240
+    },
+    {
+        "name": "lhz_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "lhz_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "lou_dun01",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "lou_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "lou_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "louyang",
+        "width": 360,
+        "height": 360
+    },
+    {
+        "name": "ma_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mal_dun01",
+        "width": 260,
+        "height": 260
+    },
+    {
+        "name": "malangdo",
+        "width": 360,
+        "height": 380
+    },
+    {
+        "name": "malaya",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "man_fild03",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjo_dun01",
+        "width": 280,
+        "height": 340
+    },
+    {
+        "name": "mjolnir_02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_04",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_05",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_08",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_09",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "mjolnir_10",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild02",
+        "width": 400,
+        "height": 360
+    },
+    {
+        "name": "moc_fild03",
+        "width": 320,
+        "height": 360
+    },
+    {
+        "name": "moc_fild07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild11",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild12",
+        "width": 320,
+        "height": 400
+    },
+    {
+        "name": "moc_fild13",
+        "width": 340,
+        "height": 400
+    },
+    {
+        "name": "moc_fild16",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild17",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_fild18",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "moc_pryd02",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "moc_ruins",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "moscovia",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "nif_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "orcsdun01",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "pay_dun01",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "pay_dun03",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "pay_dun04",
+        "width": 240,
+        "height": 240
+    },
+    {
+        "name": "pay_fild04",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "pay_fild06",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "pay_fild07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "pay_fild09",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "pay_fild10",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "pay_fild11",
+        "width": 320,
+        "height": 360
+    },
+    {
+        "name": "prt_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "prt_fild06",
+        "width": 380,
+        "height": 340
+    },
+    {
+        "name": "prt_fild09",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "prt_fild10",
+        "width": 360,
+        "height": 320
+    },
+    {
+        "name": "prt_fild11",
+        "width": 380,
+        "height": 320
+    },
+    {
+        "name": "prt_maze01",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "prt_sewb1",
+        "width": 320,
+        "height": 320
+    },
+    {
+        "name": "ra_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild05",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild06",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild08",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild10",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild12",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_fild13",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ra_san05",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "spl_fild03",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "treasure02",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "tur_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "tur_dun04",
+        "width": 200,
+        "height": 200
+    },
+    {
+        "name": "um_dun02",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "name": "um_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "um_fild02",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "um_fild03",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "um_fild04",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild01",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild03",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild04",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild05",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild06",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "ve_fild07",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "xmas_fild01",
+        "width": 280,
+        "height": 280
+    },
+    {
+        "name": "yuno_fild03",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "name": "yuno_fild12",
+        "width": 400,
+        "height": 400
+    }
+]
