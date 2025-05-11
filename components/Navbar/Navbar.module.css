@@ -1,0 +1,12 @@
+.navbar {
+    height: 4vh;
+    border: black solid 2px;
+    background: linear-gradient(to right, rgb(23, 9, 136), rgb(41, 24, 174), rgb(41, 19, 150), rgb(58, 39, 156), rgb(73, 63, 154), rgb(98, 90, 152), rgb(120, 117, 146), rgb(192, 192, 192));
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    border-radius: 1%;
+    border-right: rgb(8, 7, 10) solid 2px;
+}
