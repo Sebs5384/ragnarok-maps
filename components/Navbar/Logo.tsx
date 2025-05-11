@@ -3,7 +3,7 @@ import Image from "next/image";
 import ragnarokMaps from "../../public/img/ragnarokMaps.png";
 
 interface LogoProps {
-    className: string
+    className?: string
 };
 
 function Logo({ className }: LogoProps): React.ReactElement {
