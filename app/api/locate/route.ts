@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readJsonFile, loadLocalImage, markMapImage } from "../../utils/general";
+import { readJsonFile, loadLocalImage, markMapImage } from "../../../utils/general";
 
 export async function GET(req: Request) {
     try {
