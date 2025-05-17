@@ -1,0 +1,62 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;   
+}
+
+.heroSectionContainer {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(to right, rgb(18, 18, 18), rgb(52, 51 ,203 ,255), rgb(52, 51, 203, 255), rgb(42, 41, 193, 245), rgb(42, 41, 193, 245), rgb(32, 31, 183, 235), rgb(18, 18, 18));
+    border-radius: 2%;
+}
+
+.heroSectionTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.heroSectionDescription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.mapSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapImage {
+    border-radius: 5%;
+    margin-right: 2rem;
+}
+
+.kafraSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 4rem;
+}
+
+.kafraText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
