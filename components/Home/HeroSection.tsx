@@ -4,8 +4,8 @@ import styles from "./Home.module.css";
 
 function HeroSection(): React.ReactElement {
     return (
-        <section className={styles.heroSection}>
-            <h1 className={styles.heroSectionTitle}>Locate</h1>
+        <section className={styles.homeSection}>
+            <h1 className={styles.homeTitles}>Locate</h1>
             <div className={styles.heroSectionContainer} >
                 <div className={styles.mapSection}>
                     <h1><strong>Map: Lighthalzen</strong></h1>
