@@ -8,9 +8,9 @@ function Navbar(): React.ReactElement {
     return (
         <Bar className={styles.navbar}>
             <Logo className={styles.logo}/>
-            <Link href="/about">About</Link>
-            <Link href="/maps">Maps</Link>
-            <Link href="/search">Quick Search</Link>
+            <Link className={styles.navItem} href="/about">About</Link>
+            <Link className={styles.navItem} href="/maps">Maps</Link>
+            <Link className={styles.navItem} href="/search">Quick Search</Link>
         </Bar>
     );
 };
