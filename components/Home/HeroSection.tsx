@@ -21,8 +21,8 @@ function HeroSection(): React.ReactElement {
                     <Image 
                         src="/img/kafra_lhz.png" 
                         alt="Ragnarok Maps Logo"
-                        width={55}
-                        height={55}
+                        width={45}
+                        height={45}
                     />
                     <div className={styles.kafraText}>
                         <strong>Kafra Lyrith</strong>

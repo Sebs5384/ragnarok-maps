@@ -13,36 +13,39 @@ function HowItWorks(): React.ReactElement {
                 </div>
                 <div className={styles.stepByStepSection}>
                     <div className={styles.stepByStepItem}>
-                        <Image 
-                            src="/img/lhz_img.png"
-                            alt="Ragnarok Maps Logo"
-                            width={120}
-                            height={120}
-                            className={styles.stepByStepImage}
-                        />
+                        <div className={styles.stepByStepImageWrapper}>
+                            <Image 
+                                src="/img/lhz_img.png"
+                                alt="Ragnarok Maps Logo"
+                                fill
+                                className={styles.stepByStepImage}
+                            />
+                        </div>
                         <p className={styles.stepByStepText}>Find the location you would like to mark in game</p>
                     </div>
                     <div className={styles.stepByStepItem}>
-                        <Image 
-                            src="/img/lhz_img.png"
-                            alt="Ragnarok Maps Logo"
-                            width={120}
-                            height={120}
-                            className={styles.stepByStepImage}
-                        />
+                        <div className={styles.stepByStepImageWrapper}>
+                            <Image 
+                                src="/img/lhz_img.png"
+                                alt="Ragnarok Maps Logo"
+                                fill
+                                className={styles.stepByStepImage}
+                            />
+                        </div>
                         <div className={styles.stepByStepText}>
                             <p>Click on maps to view the full catalogue of maps or use</p>
                             <p>the quick search feature to find your desired map by name</p>
                         </div>
                     </div>
                     <div className={styles.stepByStepItem}>
-                        <Image 
-                            src="/img/lhz_img.png"
-                            alt="Ragnarok Maps Logo"
-                            width={120}
-                            height={120}
-                            className={styles.stepByStepImage}
-                        />
+                        <div className={styles.stepByStepImageWrapper}>
+                            <Image 
+                                src="/img/lhz_img.png"
+                                alt="Ragnarok Maps Logo"
+                                fill
+                                className={styles.stepByStepImage}
+                            />
+                        </div>
                         <div className={styles.stepByStepText}>
                             <p>Input the coordinates of the cell you would like</p>
                             <p> to mark and click locate to generate your custom map URL</p>
