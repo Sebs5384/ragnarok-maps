@@ -1,40 +1,108 @@
 import React from "react";
+import Button from "../common/Button";  
 import Image from "next/image";
 import styles from "./Home.module.css";
 
 function HeroSection(): React.ReactElement {
     return (
-        <section className={styles.homeSection}>
-            <h1 className={styles.homeTitles}>Locate</h1>
-            <div className={styles.heroSectionContainer} >
-                <div className={styles.mapSection}>
-                    <h1><strong>Map: Lighthalzen</strong></h1>
-                    <Image 
-                        src="/img/lhz_img.png" 
-                        alt="Ragnarok Maps Logo"
-                        width={250}
-                        height={250}
-                        className={styles.mapImage}
-                    />
+        <section className={styles.heroSection}>
+            <div className={styles.heroSectionContainer}>
+                <div className={styles.heroSectionMain}>
+                    <strong className={styles.heroSectionTitleText}>Which map are</strong>
+                    <strong className={styles.heroSectionTitleText}>we searching for today?</strong>
+                    <p className={styles.heroSectionDescription}>A simple tool built for adventurers</p>
+                    <p className={styles.heroSectionDescription}>Easily mark and discover locations across Ragnarok Online maps.</p>
                 </div>
-                <div className={styles.kafraSection}>
-                    <Image 
-                        src="/img/kafra_lhz.png" 
-                        alt="Ragnarok Maps Logo"
-                        width={45}
-                        height={45}
-                    />
-                    <div className={styles.kafraText}>
-                        <strong>Kafra Lyrith</strong>
-                        <br/>
-                        <strong>Cordinates: X: 220 - Y: 159</strong>
+            </div>
+            <div className={styles.heroSectionContainer}>
+                <div className={styles.heroSectionCollageContainer}>
+                    <div className={styles.heroSectionImageContainer}>
+                        <div className={styles.heroSectionTopItemsContainer}>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/lighthalzen.png" 
+                                    alt="map-1"
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/mjolnir_10.png" 
+                                    alt="map-2"
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/pay_dun04.png" 
+                                    alt="map-3"
+                                    fill
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.heroSectionTopItemsContainer}>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/prt_maze01.png" 
+                                    alt="map-4"
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.heroMap5Container}>
+                                <Button>Browse</Button>
+                            </div>
+                            <div className={styles.heroMap6Container}>
+                                <Image 
+                                    className={styles.heroMap11Item}
+                                    src="/maps/ice_dun03.png" 
+                                    alt="map-6"
+                                    fill
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.heroSectionTopItemsContainer}>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/dew_dun01.png" 
+                                    alt="map-7"
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/brasilis.png" 
+                                    alt="map-8"
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.heroMapContainer}>
+                                <Image 
+                                    src="/maps/gef_dun00.png" 
+                                    alt="map-9"
+                                    fill
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.heroHorizontalSectionImageContainer}>
+                        <div className={styles.heroMapContainer}>
+                            <Image
+                                src="/maps/gonryun.png" 
+                                alt="map-10"
+                                fill
+                            />
+                        </div>
+                        <div className={styles.heroMap11Container}>
+                            <Image
+                                className={styles.heroMap11Item}
+                                src="/maps/ama_fild01.png" 
+                                alt="map-11"
+                                fill
+                            />
+                        </div>
                     </div>
                 </div>
-                <div className={styles.heroSectionDescription}>
-                    <h1>Search, mark and share Ragnarok Online maps with your friends</h1>
-                    <p>Find your way to Kafra Lyrith or any location in your favorite Ragnarok Online maps</p>
-                </div>
-            </div>        
+            </div>
         </section>
     );
 };
