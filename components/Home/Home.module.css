@@ -6,19 +6,129 @@
 .homeSection {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     height: 100%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;   
 }
 
-.heroSectionContainer {
+.heroSection {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.locateSectionContainer {
     display: flex;
     padding: 2rem;
     background: linear-gradient(to right, rgb(18, 18, 18), rgb(52, 51 ,203 ,255), rgb(52, 51, 203, 255), rgb(42, 41, 193, 245), rgb(42, 41, 193, 245), rgb(32, 31, 183, 235), rgb(18, 18, 18));
     border-radius: 2%;
+}
+
+.heroSectionContainer {
+    display: flex;
+}
+
+.heroSectionCollageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid white;
+    border-radius: 2%;
+    background: linear-gradient(to right, rgb(18, 18, 18), rgb(52, 51 ,203 ,255), rgb(52, 51, 203, 255), rgb(42, 41, 193, 245), rgb(42, 41, 193, 245), rgb(32, 31, 183, 235), rgb(18, 18, 18));
+}
+
+.heroSectionImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.1rem;
+    padding: 0.5rem;
+}
+
+.heroSectionTopItemsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.heroHorizontalSectionImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.heroCollageItem {
+    background: blue;
+}
+
+.heroMapContainer {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 240px;
+    background: blue;
+    border: solid 2px white;
+    border-radius: 2%;
+}
+
+.heroMap5Container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(to right, rgb(18, 18, 18), rgb(52, 51 ,203 ,255), rgb(52, 51, 203, 255), rgb(42, 41, 193, 245), rgb(42, 41, 193, 245), rgb(32, 31, 183, 235), rgb(18, 18, 18));
+    border: solid 2px white;
+    border-radius: 2%;
+}
+
+.heroMap6Container {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: blue;
+    border: solid 2px white;
+    border-radius: 2%;
+}
+
+.heroMap10Container {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background: blue;
+    border: solid 2px white;
+    border-radius: 2%;
+}
+
+.heroMap11Container {
+    display: flex;
+    position: relative;
+    width: 550px;
+    height: 230px;
+    background: blue;
+    border: solid 2px white;
+    border-radius: 2%;
+}
+
+.heroMap11Item {
+    object-fit: cover;
+    transform: scale(1);
+    transform-origin: center;
+    border-radius: 1%;
 }
 
 .howItWorksSectionContainer {
@@ -42,11 +152,28 @@
     margin-bottom: 1rem;
 }
 
-.heroSectionDescription {
+.locateSectionDescription {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     font-size: 1.1rem;
+}
+
+.heroSectionMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.heroSectionDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .howItWorksDescription {
@@ -64,7 +191,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
 }
 
@@ -78,6 +205,13 @@
 .mapImage {
     border-radius: 5%;
     margin-right: 2rem;
+}
+
+.heroSectionImage {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .stepByStepImageWrapper {
@@ -99,7 +233,6 @@
     position: relative;
     overflow: hidden;
     background-color: #424549;
-    margin-top: 2rem;
 }
 
 .botImage {
@@ -141,6 +274,10 @@
     align-items: center;
 }
 
+.heroSectionTitleText {
+    font-size: 4rem;
+}
+
 .stepByStepText {
     margin-top: 2rem;
     font-size: 0.8rem;
@@ -152,6 +289,11 @@
     margin-top: 0.5rem;
     font-size: 0.8rem;
     line-height: 1.2;
+}
+
+.botNameText {
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
 
 .inviteButton {
