@@ -49,7 +49,7 @@ function HeroSection(): React.ReactElement {
                                 />
                             </div>
                             <div className={styles.heroMap5Container}>
-                                <Button>Browse</Button>
+                                <Button className={styles.heroSectionButton}>Browse our collection of maps</Button>
                             </div>
                             <div className={styles.heroMap6Container}>
                                 <Image 
