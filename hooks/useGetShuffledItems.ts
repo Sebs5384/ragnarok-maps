@@ -3,25 +3,27 @@ import { shuffleItemsReducer, initialShuffleItemsState } from "../reducers/index
 
 interface Items {
     items: string[]
+    hasShuffle: boolean
 };
 
-function useGetShuffledItems(items: Items, amount: number): Items {
+function useGetShuffledItems(items: string[], amount: number): Items {
     const [state, dispatch] = useReducer(shuffleItemsReducer, initialShuffleItemsState);	
 
     useEffect(() => {
-        if (!items.items || items.items.length === 0) return;
+        if (!items || items.length === 0) return;
 
         try {
-            const randomItems = [...items.items].sort(() => Math.random() - 0.5).slice(0, amount);
+            const randomItems = [...items].sort(() => Math.random() - 0.5).slice(0, amount);
 
             dispatch({ type: "SHUFFLED_ITEMS", payload: randomItems });
         } catch (error) {
             console.error(error);
         };
-    }, [items.items]);
+    }, [items]);
 
     return {
-        items: state.shuffledItems
+        items: state.shuffledItems,
+        hasShuffle: state.hasShuffle
     };
 };
 
