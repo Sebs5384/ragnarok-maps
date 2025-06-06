@@ -10,10 +10,6 @@ function HeroSection(): React.ReactElement {
     console.log(items);
     console.log(hasShuffle);
 
-    if(!hasShuffle) {
-        return <div>Loading....</div>
-    };
-
     return (
         <section className={styles.heroSection}>
             <div className={styles.heroSectionContainer}>
@@ -24,7 +20,7 @@ function HeroSection(): React.ReactElement {
                     <p className={styles.heroSectionDescription}>Easily mark and discover locations across Ragnarok Online maps.</p>
                 </div>
             </div>
-            <HeroSectionCollage items={items} />
+            <HeroSectionCollage items={items} hasShuffle={hasShuffle} />
         </section>
     );
 };
