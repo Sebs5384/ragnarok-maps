@@ -13,10 +13,10 @@ export function HomeProvider({ children }: Children): React.ReactElement {
     const MAX_MAPS = 11;
 
     const { loading, maps, error } = useFetchMaps();
-    const { items } = useGetShuffledItems({ items: maps }, MAX_MAPS);
+    const { items, hasShuffle } = useGetShuffledItems(maps, MAX_MAPS);
 
     return (
-        <HomeContext.Provider value={{ items }}>
+        <HomeContext.Provider value={{ items, hasShuffle }}>
             {children}
         </HomeContext.Provider>
     )
