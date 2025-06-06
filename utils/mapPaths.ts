@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import blurPlaceholder from "@/public/img/blur_placeholder.png";
 import img0 from "@/public/maps/alb2trea.png";
 import img1 from "@/public/maps/amatsu.png";
 import img2 from "@/public/maps/ama_fild01.png";
@@ -134,6 +135,7 @@ import img131 from "@/public/maps/yuno_fild03.png";
 import img132 from "@/public/maps/yuno_fild12.png";
 
 const mapImages: Record<string, StaticImageData> = {
+  "placeholder": blurPlaceholder,
   "alb2trea": img0,
   "amatsu": img1,
   "ama_fild01": img2,
