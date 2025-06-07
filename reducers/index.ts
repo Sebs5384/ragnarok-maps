@@ -1,5 +1,5 @@
 import { shuffleItemsReducer, initialShuffleItemsState } from "./shuffleItemsReducer";
-import { mapsReducer, initialMapsState, MapsState } from "./mapsReducer";
+import { mapsReducer, initialMapsState } from "./mapsReducer";
 
 export {
     shuffleItemsReducer,
@@ -7,5 +7,3 @@ export {
     mapsReducer,
     initialMapsState,
 };
-
-export type { MapsState };

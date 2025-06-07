@@ -1,19 +1,11 @@
-interface ShuffleItems {
-    shuffledItems: string[];
-    hasShuffle: boolean;
-};
+import { IShuffledItemsState, IAction } from "./interfaces/index";
 
-interface Action {
-    type: string;
-    payload: any;
-};
-
-const initialShuffleItemsState: ShuffleItems = {
+const initialShuffleItemsState: IShuffledItemsState = {
     shuffledItems: [],
     hasShuffle: false,
 };
 
-function shuffleItemsReducer(state: ShuffleItems = initialShuffleItemsState, action: Action): ShuffleItems {
+function shuffleItemsReducer(state: IShuffledItemsState = initialShuffleItemsState, action: IAction): IShuffledItemsState {
     const { type, payload } = action;
 
     switch(type) {
@@ -22,7 +14,7 @@ function shuffleItemsReducer(state: ShuffleItems = initialShuffleItemsState, act
                 ...state,
                 shuffledItems: payload,
                 hasShuffle: true
-            } as ShuffleItems;
+            } as IShuffledItemsState;
         default:
             return state;
     };

@@ -1,8 +1,9 @@
 import { useEffect, useReducer } from "react";
-import { mapsReducer, initialMapsState, MapsState } from "../reducers/index";
+import { mapsReducer, initialMapsState } from "../reducers/index";
+import { IMapsState } from "../reducers/interfaces/index";
 import { getMaps } from "../api/maps";
 
-function useFetchMaps(): MapsState {
+function useFetchMaps(): IMapsState {
     const [state, dispatch] = useReducer(mapsReducer, initialMapsState);
 
     useEffect(() => {

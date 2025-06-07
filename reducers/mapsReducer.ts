@@ -1,13 +1,4 @@
-interface MapsState {
-    loading: boolean;
-    maps: string[];
-    error: any;
-};
-
-interface Action {
-    type: string;
-    payload: any;
-};
+import { IAction, IMapsState } from "./interfaces/index";
 
 const initialMapsState = {
     loading: false,
@@ -15,7 +6,7 @@ const initialMapsState = {
     error: null
 };
 
-function mapsReducer(state: MapsState = initialMapsState, action: Action): MapsState {
+function mapsReducer(state: IMapsState = initialMapsState, action: IAction): IMapsState {
     const { type, payload } = action;
 
     switch(type) {
@@ -32,7 +23,7 @@ function mapsReducer(state: MapsState = initialMapsState, action: Action): MapsS
                 loading: false,
                 maps: payload,
                 error: null
-            } as MapsState;
+            } as IMapsState;
         default:
             return state;
     };
@@ -42,5 +33,3 @@ export {
     mapsReducer,
     initialMapsState,
 };
-
-export type { MapsState };
