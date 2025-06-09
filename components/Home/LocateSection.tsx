@@ -21,8 +21,9 @@ function LocateSection(): React.ReactElement {
                     <Image 
                         src="/img/kafra_lhz.png" 
                         alt="Ragnarok Maps Logo"
-                        width={45}
-                        height={45}
+                        width={80}
+                        height={80}
+                        className={styles.kafraImage}
                     />
                     <div className={styles.kafraText}>
                         <strong>Kafra Lyrith</strong>
@@ -30,9 +31,9 @@ function LocateSection(): React.ReactElement {
                         <strong>Cordinates: X: 220 - Y: 159</strong>
                     </div>
                 </div>
-                <div className={styles.LocateSectionDescription}>
-                    <h1>Search, mark and share Ragnarok Online maps with your friends</h1>
-                    <p>Find your way to Kafra Lyrith or any location in your favorite Ragnarok Online maps</p>
+                <div className={styles.locateSectionDescription}>
+                    <h1><strong>Search, mark and share Ragnarok Online maps with your friends</strong></h1>
+                    <strong>Find your way to Kafra Lyrith or any location in your favorite Ragnarok Online maps</strong>
                 </div>
             </div>        
         </section>

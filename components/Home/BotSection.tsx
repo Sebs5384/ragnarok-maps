@@ -11,7 +11,7 @@ function BotSection(): React.ReactElement {
             <h1 className={styles.homeTitles}>Lazy to leave Discord?</h1>
             <div className={styles.botSectionContainer}>
                 <div className={styles.botDescription}>
-                    <h1><strong>Have a look at the Discord bot</strong></h1>
+                    <h1><strong>Take a look at the Discord bot !</strong></h1>
                     <strong className={styles.botNameText}>Count Von Count</strong>    
                     <div className={styles.botImageWrapper}>
                         <Image 
