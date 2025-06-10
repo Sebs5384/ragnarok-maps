@@ -1,17 +1,11 @@
+import { ICollageProps } from "./interfaces/index";
 import React from "react";
 import Button from "../common/Button";
 import Image from "next/image";
 import mapImages from "../../utils/mapPaths";
 import styles from "./Home.module.css";
 
-interface Props {
-    items: Array<{
-        name: string
-    }>,
-    hasShuffle: boolean
-};
-
-function HeroSectionCollage({ items, hasShuffle }: Props): React.ReactElement {
+function HeroSectionCollage({ items, hasShuffle }: ICollageProps): React.ReactElement {
     return (
         <div className={styles.heroSectionContainer}>
             <div className={styles.heroSectionCollageContainer}>
