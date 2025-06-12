@@ -12,6 +12,7 @@ function Logo({ className }: LogoProps): React.ReactElement {
             src={ragnarokMaps} 
             alt="Ragnarok Maps Logo"
             className={className}
+            onClick={() => window.location.href = "/"}
         />
     );
 };  
