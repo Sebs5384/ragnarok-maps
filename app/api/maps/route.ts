@@ -6,12 +6,17 @@ export async function GET(req: Request) {
     try {
         const { searchParams } = new URL(req.url);
         const limit = searchParams.get("limit");
+        const offset = searchParams.get("offset");
 
         if(!limit || isNaN(parseInt(limit))) {
             return NextResponse.json({ error: "Invalid limit"}, { status: 400 });
         };
 
-        const maps = readJsonFile("maps-meta.json").slice(0, parseInt(limit || "0"));
+        if(!offset || isNaN(parseInt(offset))) {
+            return NextResponse.json({ error: "Invalid offset"}, { status: 400 });
+        };
+
+        const maps = readJsonFile("maps-meta.json").slice(parseInt(offset || "0"), parseInt(offset || "0") + parseInt(limit || "0"));
 
         return new NextResponse(JSON.stringify(maps), {
             status: 200,
