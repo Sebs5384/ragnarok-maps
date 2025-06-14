@@ -12,7 +12,7 @@ function Grid(): React.ReactElement {
         <section className={styles.mapsSection}>
                 {
                     maps?.map(({ id, name }) => 
-                        <GridTile id={id} name={name} />
+                        <GridTile id={id} name={name} key={id} />
                     )
                 }
         </section>
