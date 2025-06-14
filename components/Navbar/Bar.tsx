@@ -1,11 +1,7 @@
+import { IBarProps } from "./interfaces/index";
 import React from "react";
 
-interface BarProps {
-    children: React.ReactNode,
-    className?: string
-};
-
-function Bar({ className, children, ...props }: BarProps) {
+function Bar({ className, children, ...props }: IBarProps) {
     return (
         <nav className={className} {...props}>
             {children}

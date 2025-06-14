@@ -1,12 +1,9 @@
+import { ILogoProps } from "./interfaces/index";
 import React from "react";
 import Image from "next/image";
 import ragnarokMaps from "../../public/img/ragnarokMaps.png";
 
-interface LogoProps {
-    className?: string
-};
-
-function Logo({ className }: LogoProps): React.ReactElement {
+function Logo({ className }: ILogoProps): React.ReactElement {
     return (
         <Image 
             src={ragnarokMaps} 
