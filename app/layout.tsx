@@ -7,11 +7,7 @@ export const metadata: Metadata = {
   description: "A map viewer for Ragnarok Online",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
@@ -20,4 +16,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};

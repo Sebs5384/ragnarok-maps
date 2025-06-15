@@ -1,15 +1,11 @@
-import { MapsProvider } from "../../context/MapsContext";
-import Grid from "../../components/Maps/Grid";
-import styles from "../../components/Maps/Maps.module.css";
+import React from "react";
+import Maps from "../../components/Maps/Maps";
 
-function Maps() {
-    return (
-        <MapsProvider>
-            <main className={styles.home}>
-                <Grid />
-            </main>
-        </MapsProvider>
-    );
+function Page({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }): React.ReactElement {
+    const limit = searchParams.limit ? parseInt(searchParams.limit as string) : 40;
+    const offset = searchParams.offset ? parseInt(searchParams.offset as string) : 0;
+
+    return <Maps limit={limit} offset={offset} />;
 };
 
-export default Maps;
+export default Page;
