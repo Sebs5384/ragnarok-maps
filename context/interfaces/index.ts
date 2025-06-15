@@ -1,5 +1,5 @@
 import IHomeContextProps from "./IHomeContextProps";
 import IMapsContextProps from "./IMapsContextProps";
-import IChildren from "./IChildren";
+import IMapsProviderProps from "./IMapsProviderProps";
 
-export type { IHomeContextProps, IMapsContextProps, IChildren };
+export type { IHomeContextProps, IMapsContextProps, IMapsProviderProps };
