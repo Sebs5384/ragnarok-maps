@@ -2,15 +2,15 @@
 
 import { useContext, createContext } from "react";
 import { useFetchMaps } from "../hooks/index";
-import { IMapsContextProps, IChildren } from "./interfaces/index";
+import { IMapsContextProps, IMapsProviderProps } from "./interfaces/index";
 
 export const MapsContext = createContext<IMapsContextProps | undefined>(undefined);
 
-export function MapsProvider({ children }: IChildren): React.ReactElement {
-    const { loading, maps, error } = useFetchMaps(40, 60);
+export function MapsProvider({ children, limit, offset }: IMapsProviderProps): React.ReactElement {
+    const { loading, maps, error } = useFetchMaps(limit, offset);
     
     return (
-        <MapsContext.Provider value={{ maps }}>
+        <MapsContext.Provider value={{ maps }}> 
             {children}
         </MapsContext.Provider>
     );
