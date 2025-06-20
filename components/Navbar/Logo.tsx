@@ -1,7 +1,7 @@
 import { ILogoProps } from "./interfaces/index";
 import React from "react";
 import Image from "next/image";
-import ragnarokMaps from "../../public/img/ragnarokMaps.png";
+import ragnarokMaps from "@/public/img/ragnarokMaps.png";
 
 function Logo({ className }: ILogoProps): React.ReactElement {
     return (

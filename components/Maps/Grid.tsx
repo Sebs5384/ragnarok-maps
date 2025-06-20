@@ -1,6 +1,6 @@
 "use client";
 
-import { useMapsContext } from "../../context/MapsContext";
+import { useMapsContext } from "@/context/MapsContext";
 import React from "react";
 import GridTile from "./GridTile";
 import styles from "./Maps.module.css";

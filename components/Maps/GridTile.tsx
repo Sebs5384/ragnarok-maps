@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mapImages from "../../utils/mapPaths";
+import mapImages from "@/utils/mapPaths";
 import styles from "./Maps.module.css";
 
 function GridTile({id, name}: {id: number, name: string}): React.ReactElement {

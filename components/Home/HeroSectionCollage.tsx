@@ -1,8 +1,8 @@
 import { ICollageProps } from "./interfaces/index";
 import React from "react";
-import Button from "../common/Button";
+import Button from "@/components/common/Button";
 import Image from "next/image";
-import mapImages from "../../utils/mapPaths";
+import mapImages from "@/utils/mapPaths";
 import styles from "./Home.module.css";
 
 function HeroSectionCollage({ items, hasShuffle }: ICollageProps): React.ReactElement {

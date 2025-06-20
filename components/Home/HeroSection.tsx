@@ -1,6 +1,6 @@
 "use client";
 
-import { useHomeContext } from "../../context/HomeContext";
+import { useHomeContext } from "@/context/HomeContext";
 import React from "react";
 import HeroSectionMain from "./HeroSectionMain";
 import HeroSectionCollage from "./HeroSectionCollage";
