@@ -1,11 +1,21 @@
 import React from "react";
-import Maps from "../../components/Maps/Maps";
+import { MapsProvider } from "@/context/MapsContext";
+import Grid from "@/components/Maps/Grid";
+import Paginator from "@/components/Paginator/Paginator";
+import styles from "@/components/Maps/Maps.module.css";
 
-function Page({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }): React.ReactElement {
-    const limit = searchParams.limit ? parseInt(searchParams.limit as string) : 40;
-    const offset = searchParams.offset ? parseInt(searchParams.offset as string) : 0;
+function Maps({ searchParams }: { searchParams: { [key: string]: string | undefined } }): React.ReactElement {
+    const limit = searchParams.limit ? parseInt(searchParams.limit) : 40;
+    const offset = searchParams.offset ? parseInt(searchParams.offset) : 0;
 
-    return <Maps limit={limit} offset={offset} />;
+    return (
+        <MapsProvider limit={limit} offset={offset} >
+            <main className={styles.home}>
+                <Grid />
+                <Paginator />
+            </main>
+        </MapsProvider>
+    );
 };
 
-export default Page;
+export default Maps;

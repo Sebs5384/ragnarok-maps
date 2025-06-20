@@ -1,8 +1,22 @@
 import React from "react";
-import Home from "../components/Home/Home";
+import { HomeProvider } from "@/context/HomeContext";
+import HeroSection from "@/components/Home/HeroSection";
+import LocateSection from "@/components/Home/LocateSection";
+import HowItWorks from "@/components/Home/HowItWorks";
+import BotSection from "@/components/Home/BotSection";
+import styles from "@/components/Home/Home.module.css";
 
-function Page(): React.ReactElement {
-  return <Home />;
+function Home(): React.ReactElement {
+  return (
+    <HomeProvider>
+      <main className={styles.home}>
+        <HeroSection />
+        <LocateSection />
+        <HowItWorks />
+        <BotSection />
+      </main>
+    </HomeProvider>
+  );
 };
 
-export default Page;
+export default Home;
