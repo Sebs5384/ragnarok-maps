@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readJsonFile } from "../../../utils/general";
+import { readJsonFile } from "@/utils/general";
 
 
 export async function GET(req: Request) {
