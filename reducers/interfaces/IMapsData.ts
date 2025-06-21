@@ -6,4 +6,4 @@ interface IMapsData {
     cells: number
 };
 
-export default IMapsData
+export default IMapsData;
