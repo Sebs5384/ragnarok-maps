@@ -1,4 +1,4 @@
-import { IMapsData } from "../../reducers/interfaces/index";
+import { IMapsData } from "@/reducers/interfaces/index";
 
 interface IMapsContextProps {
     maps: IMapsData[];

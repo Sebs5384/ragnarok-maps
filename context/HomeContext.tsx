@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, createContext } from "react";
-import { useGetShuffledItems, useFetchMaps } from "../hooks/index";
+import { useGetShuffledItems, useFetchMaps } from "@/hooks/index";
 import { IHomeContextProps, IChildren } from "./interfaces/index";
 
 export const HomeContext = createContext<IHomeContextProps | undefined>(undefined);

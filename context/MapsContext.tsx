@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, createContext } from "react";
-import { useFetchMaps } from "../hooks/index";
+import { useFetchMaps } from "@/hooks/index";
 import { IMapsContextProps, IMapsProviderProps } from "./interfaces/index";
 
 export const MapsContext = createContext<IMapsContextProps | undefined>(undefined);
