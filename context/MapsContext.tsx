@@ -1,16 +1,17 @@
 "use client";
 
 import { useContext, createContext } from "react";
-import { useFetchMaps } from "@/hooks/index";
+import { useFetchMaps, useHandlePagination } from "@/hooks/index";
 import { IMapsContextProps, IMapsProviderProps } from "./interfaces/index";
 
 export const MapsContext = createContext<IMapsContextProps | undefined>(undefined);
 
 export function MapsProvider({ children, limit, offset }: IMapsProviderProps): React.ReactElement {
-    const { loading, maps, error } = useFetchMaps(limit, offset);
-    
+    const { loading, maps, error } = useFetchMaps();
+    const { totalPages, lastPage, currentPage, mapsInPage } = useHandlePagination({ limit, offset, items: maps });
+
     return (
-        <MapsContext.Provider value={{ maps }}> 
+        <MapsContext.Provider value={{ totalPages, lastPage, currentPage, mapsInPage }}> 
             {children}
         </MapsContext.Provider>
     );

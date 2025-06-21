@@ -1,7 +1,10 @@
 import { IMapsData } from "@/reducers/interfaces/index";
 
 interface IMapsContextProps {
-    maps: IMapsData[];
+    totalPages: number[] | null;
+    lastPage: number | null;
+    currentPage: number;
+    mapsInPage: IMapsData[] | null;
 };
 
 export default IMapsContextProps;
