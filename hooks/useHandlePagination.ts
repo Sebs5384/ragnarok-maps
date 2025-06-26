@@ -10,7 +10,7 @@ function useHandlePagination({ limit, offset, items}: { limit: number, offset: n
 
         try {
             const totalPages = Array.from({ length: Math.ceil(items.length / limit) }, (_, index) => index + 1);
-            const lastPage = Math.floor(items.length / limit) * limit;
+            const lastPage = Math.floor(items.length / limit) + 1;
             const currentPage = Math.floor(offset / limit) + 1;
             const mapsInPage = items.slice(offset, offset + limit);
             
