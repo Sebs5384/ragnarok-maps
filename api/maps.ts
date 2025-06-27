@@ -2,10 +2,18 @@ import { IMapsData } from "@/reducers/interfaces/index";
 
 const BASE_URL = "http://localhost:3000";
 
-async function getMaps(limit: number = 1000, offset: number = 0): Promise<IMapsData[] | null> {
+async function getMaps(search?: string, limit: number = 1000, offset: number = 0): Promise<IMapsData[] | null> {
     if(limit === null) return null;
 
-    const mapsUrl = `${BASE_URL}/api/maps?limit=${limit}&offset=${offset}`;
+    const params = new URLSearchParams({
+        limit: limit.toString(),
+        offset: offset.toString()
+    });
+    
+    if(search) params.append("search", search);
+
+    const mapsUrl = `${BASE_URL}/api/maps?${params.toString()}`;
+
     try {
         const response = await fetch(mapsUrl);
         if(!response.ok) {
