@@ -7,6 +7,7 @@ export async function GET(req: Request) {
         const { searchParams } = new URL(req.url);
         const limit = searchParams.get("limit");
         const offset = searchParams.get("offset");
+        const search = searchParams.get("search");
 
         if(!limit || isNaN(parseInt(limit))) {
             return NextResponse.json({ error: "Invalid limit"}, { status: 400 });
@@ -16,9 +17,16 @@ export async function GET(req: Request) {
             return NextResponse.json({ error: "Invalid offset"}, { status: 400 });
         };
 
-        const maps = readJsonFile("maps-meta.json").slice(parseInt(offset || "0"), parseInt(offset || "0") + parseInt(limit || "0"));
+        let maps = readJsonFile("maps-meta.json");
 
-        return new NextResponse(JSON.stringify(maps), {
+        if(search) {
+            const searchLower = search.toLowerCase();
+            maps = maps.filter((map: { name: string; }) => map.name?.toLowerCase().includes(searchLower));
+        };
+
+        const paginatedMaps = maps.slice(parseInt(offset), parseInt(limit) + parseInt(offset));
+
+        return new NextResponse(JSON.stringify(paginatedMaps), {
             status: 200,
             headers: {
                 "Content-Type": "application/json"
