@@ -6,8 +6,8 @@ import { IMapsContextProps, IMapsProviderProps } from "./interfaces/index";
 
 export const MapsContext = createContext<IMapsContextProps | undefined>(undefined);
 
-export function MapsProvider({ children, limit, offset }: IMapsProviderProps): React.ReactElement {
-    const { loading, maps, error } = useFetchMaps();
+export function MapsProvider({ children, search, limit, offset }: IMapsProviderProps): React.ReactElement {
+    const { loading, maps, error } = useFetchMaps(search);
     const { totalPages, lastPage, currentPage, mapsInPage } = useHandlePagination({ limit, offset, items: maps });
 
     return (
