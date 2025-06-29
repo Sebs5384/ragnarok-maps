@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { SearchboxProvider } from "@/context/SearchboxContext";
 import React from "react";
 import Link from "next/link";
 import Bar from "./Bar";
@@ -12,6 +13,8 @@ import clsx from "clsx";
 
 function Navbar(): React.ReactElement {
     const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const router = useRouter();
     const showSearchbox = pathname === "/maps";
 
     return (
@@ -31,7 +34,9 @@ function Navbar(): React.ReactElement {
                 showSearchbox && (
                     <div className={styles.centerSection}>
                         <Magnifier />
-                        <Searchbox className={styles.searchbox}/>
+                        <SearchboxProvider searchParams={searchParams} router={router}>
+                            <Searchbox className={styles.searchbox}/>
+                        </SearchboxProvider>
                     </div>
                 )   
             }
