@@ -6,12 +6,12 @@ import GridTile from "./GridTile";
 import styles from "./Maps.module.css";
 
 function Grid(): React.ReactElement {
-    const { maps } = useMapsContext();
+    const { mapsInPage } = useMapsContext();
 
     return (
         <section className={styles.mapsSection}>
                 {
-                    maps?.map(({ id, name }) => 
+                    mapsInPage?.map(({ id, name }) => 
                         <GridTile id={id} name={name} key={id} />
                     )
                 }
