@@ -7,8 +7,10 @@ import styles from "./Paginator.module.css";
 import clsx from "clsx";
 
 function Paginator(): React.ReactElement {
-    const { totalPages, lastPage, currentPage } = useMapsContext();
-    
+    const { totalPages, lastPage, currentPage, mapsInPage } = useMapsContext();
+
+    if(!totalPages || totalPages.length <= 1 ) return <></>;
+
     return (
         <section className={styles.paginator}>
             <div className={styles.paginatorItems}>
