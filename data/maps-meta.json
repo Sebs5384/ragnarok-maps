@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "alb2trea",
+        "slug": "alb2trea",
         "width": 140,
         "height": 140,
         "cells": 19600
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "name": "ama_fild01",
+        "slug": "ama-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "name": "amatsu",
+        "slug": "amatsu",
         "width": 316,
         "height": 316,
         "cells": 99856
@@ -23,6 +26,7 @@
     {
         "id": 4,
         "name": "anthell02",
+        "slug": "anthell02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -30,6 +34,7 @@
     {
         "id": 5,
         "name": "aru_gld",
+        "slug": "aru-gld",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -37,6 +42,7 @@
     {
         "id": 6,
         "name": "ayo_dun01",
+        "slug": "ayo-dun01",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -44,6 +50,7 @@
     {
         "id": 7,
         "name": "ayo_fild01",
+        "slug": "ayo-fild01",
         "width": 360,
         "height": 360,
         "cells": 129600
@@ -51,6 +58,7 @@
     {
         "id": 8,
         "name": "ayo_fild02",
+        "slug": "ayo-fild02",
         "width": 360,
         "height": 300,
         "cells": 108000
@@ -58,6 +66,7 @@
     {
         "id": 9,
         "name": "ayothaya",
+        "slug": "ayothaya",
         "width": 320,
         "height": 320,
         "cells": 102400
@@ -65,6 +74,7 @@
     {
         "id": 10,
         "name": "beach_dun2",
+        "slug": "beach-dun2",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -72,6 +82,7 @@
     {
         "id": 11,
         "name": "beach_dun3",
+        "slug": "beach-dun3",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -79,6 +90,7 @@
     {
         "id": 12,
         "name": "bra_dun02",
+        "slug": "bra-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -86,6 +98,7 @@
     {
         "id": 13,
         "name": "bra_fild01",
+        "slug": "bra-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -93,6 +106,7 @@
     {
         "id": 14,
         "name": "brasilis",
+        "slug": "brasilis",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -100,6 +114,7 @@
     {
         "id": 15,
         "name": "cmd_fild01",
+        "slug": "cmd-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -107,6 +122,7 @@
     {
         "id": 16,
         "name": "cmd_fild02",
+        "slug": "cmd-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -114,6 +130,7 @@
     {
         "id": 17,
         "name": "cmd_fild04",
+        "slug": "cmd-fild04",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -121,6 +138,7 @@
     {
         "id": 18,
         "name": "cmd_fild05",
+        "slug": "cmd-fild05",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -128,6 +146,7 @@
     {
         "id": 19,
         "name": "cmd_fild06",
+        "slug": "cmd-fild06",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -135,6 +154,7 @@
     {
         "id": 20,
         "name": "cmd_fild07",
+        "slug": "cmd-fild07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -142,6 +162,7 @@
     {
         "id": 21,
         "name": "cmd_fild08",
+        "slug": "cmd-fild08",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -149,6 +170,7 @@
     {
         "id": 22,
         "name": "cmd_fild09",
+        "slug": "cmd-fild09",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -156,6 +178,7 @@
     {
         "id": 23,
         "name": "dew_dun01",
+        "slug": "dew-dun01",
         "width": 360,
         "height": 360,
         "cells": 129600
@@ -163,6 +186,7 @@
     {
         "id": 24,
         "name": "dew_fild01",
+        "slug": "dew-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -170,6 +194,7 @@
     {
         "id": 25,
         "name": "dewata",
+        "slug": "dewata",
         "width": 340,
         "height": 340,
         "cells": 115600
@@ -177,6 +202,7 @@
     {
         "id": 26,
         "name": "dic_dun02",
+        "slug": "dic-dun02",
         "width": 240,
         "height": 240,
         "cells": 57600
@@ -184,6 +210,7 @@
     {
         "id": 27,
         "name": "ein_dun02",
+        "slug": "ein-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -191,6 +218,7 @@
     {
         "id": 28,
         "name": "gef_dun00",
+        "slug": "gef-dun00",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -198,6 +226,7 @@
     {
         "id": 29,
         "name": "gef_dun01",
+        "slug": "gef-dun01",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -205,6 +234,7 @@
     {
         "id": 30,
         "name": "gef_dun02",
+        "slug": "gef-dun02",
         "width": 260,
         "height": 260,
         "cells": 67600
@@ -212,6 +242,7 @@
     {
         "id": 31,
         "name": "gef_fild00",
+        "slug": "gef-fild00",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -219,6 +250,7 @@
     {
         "id": 32,
         "name": "gef_fild02",
+        "slug": "gef-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -226,6 +258,7 @@
     {
         "id": 33,
         "name": "gef_fild10",
+        "slug": "gef-fild10",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -233,6 +266,7 @@
     {
         "id": 34,
         "name": "gef_fild11",
+        "slug": "gef-fild11",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -240,6 +274,7 @@
     {
         "id": 35,
         "name": "gef_fild12",
+        "slug": "gef-fild12",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -247,6 +282,7 @@
     {
         "id": 36,
         "name": "gl_cas01",
+        "slug": "gl-cas01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -254,6 +290,7 @@
     {
         "id": 37,
         "name": "gl_chyard",
+        "slug": "gl-chyard",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -261,6 +298,7 @@
     {
         "id": 38,
         "name": "gon_dun02",
+        "slug": "gon-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -268,6 +306,7 @@
     {
         "id": 39,
         "name": "gon_dun03",
+        "slug": "gon-dun03",
         "width": 240,
         "height": 300,
         "cells": 72000
@@ -275,6 +314,7 @@
     {
         "id": 40,
         "name": "gon_fild01",
+        "slug": "gon-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -282,6 +322,7 @@
     {
         "id": 41,
         "name": "gonryun",
+        "slug": "gonryun",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -289,6 +330,7 @@
     {
         "id": 42,
         "name": "hu_fild01",
+        "slug": "hu-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -296,6 +338,7 @@
     {
         "id": 43,
         "name": "hu_fild02",
+        "slug": "hu-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -303,6 +346,7 @@
     {
         "id": 44,
         "name": "hu_fild06",
+        "slug": "hu-fild06",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -310,6 +354,7 @@
     {
         "id": 45,
         "name": "ice_dun01",
+        "slug": "ice-dun01",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -317,6 +362,7 @@
     {
         "id": 46,
         "name": "ice_dun02",
+        "slug": "ice-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -324,6 +370,7 @@
     {
         "id": 47,
         "name": "ice_dun03",
+        "slug": "ice-dun03",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -331,6 +378,7 @@
     {
         "id": 48,
         "name": "in_sphinx2",
+        "slug": "in-sphinx2",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -338,6 +386,7 @@
     {
         "id": 49,
         "name": "iz_dun02",
+        "slug": "iz-dun02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -345,6 +394,7 @@
     {
         "id": 50,
         "name": "iz_dun05",
+        "slug": "iz-dun05",
         "width": 280,
         "height": 280,
         "cells": 78400
@@ -352,6 +402,7 @@
     {
         "id": 51,
         "name": "izlu2dun",
+        "slug": "izlu2dun",
         "width": 216,
         "height": 232,
         "cells": 50112
@@ -359,6 +410,7 @@
     {
         "id": 52,
         "name": "jawaii",
+        "slug": "jawaii",
         "width": 340,
         "height": 360,
         "cells": 122400
@@ -366,6 +418,7 @@
     {
         "id": 53,
         "name": "kh_dun02",
+        "slug": "kh-dun02",
         "width": 240,
         "height": 240,
         "cells": 57600
@@ -373,6 +426,7 @@
     {
         "id": 54,
         "name": "lighthalzen",
+        "slug": "lighthalzen",
         "width": 400,
         "height": 360,
         "cells": 144000
@@ -380,6 +434,7 @@
     {
         "id": 55,
         "name": "lhz_fild01",
+        "slug": "lhz-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -387,6 +442,7 @@
     {
         "id": 56,
         "name": "lhz_fild02",
+        "slug": "lhz-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -394,6 +450,7 @@
     {
         "id": 57,
         "name": "lou_dun01",
+        "slug": "lou-dun01",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -401,6 +458,7 @@
     {
         "id": 58,
         "name": "lou_dun02",
+        "slug": "lou-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -408,6 +466,7 @@
     {
         "id": 59,
         "name": "lou_fild01",
+        "slug": "lou-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -415,6 +474,7 @@
     {
         "id": 60,
         "name": "louyang",
+        "slug": "louyang",
         "width": 360,
         "height": 360,
         "cells": 129600
@@ -422,6 +482,7 @@
     {
         "id": 61,
         "name": "ma_fild01",
+        "slug": "ma-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -429,6 +490,7 @@
     {
         "id": 62,
         "name": "mal_dun01",
+        "slug": "mal-dun01",
         "width": 260,
         "height": 260,
         "cells": 67600
@@ -436,6 +498,7 @@
     {
         "id": 63,
         "name": "malangdo",
+        "slug": "malangdo",
         "width": 360,
         "height": 380,
         "cells": 136800
@@ -443,6 +506,7 @@
     {
         "id": 64,
         "name": "malaya",
+        "slug": "malaya",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -450,6 +514,7 @@
     {
         "id": 65,
         "name": "man_fild03",
+        "slug": "man-fild03",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -457,6 +522,7 @@
     {
         "id": 66,
         "name": "mjo_dun01",
+        "slug": "mjo-dun01",
         "width": 280,
         "height": 340,
         "cells": 95200
@@ -464,6 +530,7 @@
     {
         "id": 67,
         "name": "mjolnir_02",
+        "slug": "mjolnir-02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -471,6 +538,7 @@
     {
         "id": 68,
         "name": "mjolnir_04",
+        "slug": "mjolnir-04",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -478,6 +546,7 @@
     {
         "id": 69,
         "name": "mjolnir_05",
+        "slug": "mjolnir-05",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -485,6 +554,7 @@
     {
         "id": 70,
         "name": "mjolnir_07",
+        "slug": "mjolnir-07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -492,6 +562,7 @@
     {
         "id": 71,
         "name": "mjolnir_08",
+        "slug": "mjolnir-08",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -499,6 +570,7 @@
     {
         "id": 72,
         "name": "mjolnir_09",
+        "slug": "mjolnir-09",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -506,6 +578,7 @@
     {
         "id": 73,
         "name": "mjolnir_10",
+        "slug": "mjolnir-10",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -513,6 +586,7 @@
     {
         "id": 74,
         "name": "moc_fild01",
+        "slug": "moc-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -520,6 +594,7 @@
     {
         "id": 75,
         "name": "moc_fild02",
+        "slug": "moc-fild02",
         "width": 400,
         "height": 360,
         "cells": 144000
@@ -527,6 +602,7 @@
     {
         "id": 76,
         "name": "moc_fild03",
+        "slug": "moc-fild03",
         "width": 320,
         "height": 360,
         "cells": 115200
@@ -534,6 +610,7 @@
     {
         "id": 77,
         "name": "moc_fild07",
+        "slug": "moc-fild07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -541,6 +618,7 @@
     {
         "id": 78,
         "name": "moc_fild11",
+        "slug": "moc-fild11",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -548,6 +626,7 @@
     {
         "id": 79,
         "name": "moc_fild12",
+        "slug": "moc-fild12",
         "width": 320,
         "height": 400,
         "cells": 128000
@@ -555,6 +634,7 @@
     {
         "id": 80,
         "name": "moc_fild13",
+        "slug": "moc-fild13",
         "width": 340,
         "height": 400,
         "cells": 136000
@@ -562,6 +642,7 @@
     {
         "id": 81,
         "name": "moc_fild16",
+        "slug": "moc-fild16",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -569,6 +650,7 @@
     {
         "id": 82,
         "name": "moc_fild17",
+        "slug": "moc-fild17",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -576,6 +658,7 @@
     {
         "id": 83,
         "name": "moc_fild18",
+        "slug": "moc-fild18",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -583,6 +666,7 @@
     {
         "id": 84,
         "name": "moc_pryd02",
+        "slug": "moc-pryd02",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -590,6 +674,7 @@
     {
         "id": 85,
         "name": "moc_ruins",
+        "slug": "moc-ruins",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -597,6 +682,7 @@
     {
         "id": 86,
         "name": "moscovia",
+        "slug": "moscovia",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -604,6 +690,7 @@
     {
         "id": 87,
         "name": "nif_fild01",
+        "slug": "nif-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -611,6 +698,7 @@
     {
         "id": 88,
         "name": "orcsdun01",
+        "slug": "orcsdun01",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -618,6 +706,7 @@
     {
         "id": 89,
         "name": "pay_dun01",
+        "slug": "pay-dun01",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -625,6 +714,7 @@
     {
         "id": 90,
         "name": "pay_dun03",
+        "slug": "pay-dun03",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -632,6 +722,7 @@
     {
         "id": 91,
         "name": "pay_dun04",
+        "slug": "pay-dun04",
         "width": 240,
         "height": 240,
         "cells": 57600
@@ -639,6 +730,7 @@
     {
         "id": 92,
         "name": "pay_fild04",
+        "slug": "pay-fild04",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -646,6 +738,7 @@
     {
         "id": 93,
         "name": "pay_fild06",
+        "slug": "pay-fild06",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -653,6 +746,7 @@
     {
         "id": 94,
         "name": "pay_fild07",
+        "slug": "pay-fild07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -660,6 +754,7 @@
     {
         "id": 95,
         "name": "pay_fild09",
+        "slug": "pay-fild09",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -667,6 +762,7 @@
     {
         "id": 96,
         "name": "pay_fild10",
+        "slug": "pay-fild10",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -674,6 +770,7 @@
     {
         "id": 97,
         "name": "pay_fild11",
+        "slug": "pay-fild11",
         "width": 320,
         "height": 360,
         "cells": 115200
@@ -681,6 +778,7 @@
     {
         "id": 98,
         "name": "prt_fild02",
+        "slug": "prt-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -688,6 +786,7 @@
     {
         "id": 99,
         "name": "prt_fild06",
+        "slug": "prt-fild06",
         "width": 380,
         "height": 340,
         "cells": 129200
@@ -695,6 +794,7 @@
     {
         "id": 100,
         "name": "prt_fild09",
+        "slug": "prt-fild09",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -702,6 +802,7 @@
     {
         "id": 101,
         "name": "prt_fild10",
+        "slug": "prt-fild10",
         "width": 360,
         "height": 320,
         "cells": 115200
@@ -709,6 +810,7 @@
     {
         "id": 102,
         "name": "prt_fild11",
+        "slug": "prt-fild11",
         "width": 380,
         "height": 320,
         "cells": 121600
@@ -716,6 +818,7 @@
     {
         "id": 103,
         "name": "prt_maze01",
+        "slug": "prt-maze01",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -723,6 +826,7 @@
     {
         "id": 104,
         "name": "prt_sewb1",
+        "slug": "prt-sewb1",
         "width": 320,
         "height": 320,
         "cells": 102400
@@ -730,6 +834,7 @@
     {
         "id": 105,
         "name": "ra_fild01",
+        "slug": "ra-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -737,6 +842,7 @@
     {
         "id": 106,
         "name": "ra_fild02",
+        "slug": "ra-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -744,6 +850,7 @@
     {
         "id": 107,
         "name": "ra_fild05",
+        "slug": "ra-fild05",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -751,6 +858,7 @@
     {
         "id": 108,
         "name": "ra_fild06",
+        "slug": "ra-fild06",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -758,6 +866,7 @@
     {
         "id": 109,
         "name": "ra_fild07",
+        "slug": "ra-fild07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -765,6 +874,7 @@
     {
         "id": 110,
         "name": "ra_fild08",
+        "slug": "ra-fild08",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -772,6 +882,7 @@
     {
         "id": 111,
         "name": "ra_fild10",
+        "slug": "ra-fild10",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -779,6 +890,7 @@
     {
         "id": 112,
         "name": "ra_fild12",
+        "slug": "ra-fild12",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -786,6 +898,7 @@
     {
         "id": 113,
         "name": "ra_fild13",
+        "slug": "ra-fild13",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -793,6 +906,7 @@
     {
         "id": 114,
         "name": "ra_san05",
+        "slug": "ra-san05",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -800,6 +914,7 @@
     {
         "id": 115,
         "name": "spl_fild03",
+        "slug": "spl-fild03",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -807,6 +922,7 @@
     {
         "id": 116,
         "name": "treasure02",
+        "slug": "treasure02",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -814,6 +930,7 @@
     {
         "id": 117,
         "name": "tur_dun02",
+        "slug": "tur-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -821,6 +938,7 @@
     {
         "id": 118,
         "name": "tur_dun04",
+        "slug": "tur-dun04",
         "width": 200,
         "height": 200,
         "cells": 40000
@@ -828,6 +946,7 @@
     {
         "id": 119,
         "name": "um_dun02",
+        "slug": "um-dun02",
         "width": 300,
         "height": 300,
         "cells": 90000
@@ -835,6 +954,7 @@
     {
         "id": 120,
         "name": "um_fild01",
+        "slug": "um-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -842,6 +962,7 @@
     {
         "id": 121,
         "name": "um_fild02",
+        "slug": "um-fild02",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -849,6 +970,7 @@
     {
         "id": 122,
         "name": "um_fild03",
+        "slug": "um-fild03",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -856,6 +978,7 @@
     {
         "id": 123,
         "name": "um_fild04",
+        "slug": "um-fild04",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -863,6 +986,7 @@
     {
         "id": 124,
         "name": "ve_fild01",
+        "slug": "ve-fild01",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -870,6 +994,7 @@
     {
         "id": 125,
         "name": "ve_fild03",
+        "slug": "ve-fild03",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -877,6 +1002,7 @@
     {
         "id": 126,
         "name": "ve_fild04",
+        "slug": "ve-fild04",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -884,6 +1010,7 @@
     {
         "id": 127,
         "name": "ve_fild05",
+        "slug": "ve-fild05",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -891,6 +1018,7 @@
     {
         "id": 128,
         "name": "ve_fild06",
+        "slug": "ve-fild06",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -898,6 +1026,7 @@
     {
         "id": 129,
         "name": "ve_fild07",
+        "slug": "ve-fild07",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -905,6 +1034,7 @@
     {
         "id": 130,
         "name": "xmas_fild01",
+        "slug": "xmas-fild01",
         "width": 280,
         "height": 280,
         "cells": 78400
@@ -912,6 +1042,7 @@
     {
         "id": 131,
         "name": "yuno_fild03",
+        "slug": "yuno-fild03",
         "width": 400,
         "height": 400,
         "cells": 160000
@@ -919,6 +1050,7 @@
     {
         "id": 132,
         "name": "yuno_fild12",
+        "slug": "yuno-fild12",
         "width": 400,
         "height": 400,
         "cells": 160000
