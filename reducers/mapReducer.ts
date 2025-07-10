@@ -1,14 +1,8 @@
-import { IMapsData } from "@/reducers/interfaces/index";
-
-interface IMapState {
-    loading: boolean;
-    map: IMapsData;
-    error: any;
-}
+import { IMapState, IAction } from "@/reducers/interfaces/index";
 
 const initialMapState = {
     loading: false,
-    map: {} as IMapState,
+    map: null,
     error: null  
 };
 
@@ -33,4 +27,9 @@ function mapReducer(state: IMapState = initialMapState, action: IAction): IMapSt
         default:
             return state;
     };
+};
+
+export {
+    mapReducer,
+    initialMapState
 };
