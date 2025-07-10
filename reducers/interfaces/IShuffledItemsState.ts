@@ -1,4 +1,4 @@
-import IMapsData from "./IMapsData";
+import IMapsData from "./IMapData";
 
 interface IShuffledItemsState {
     shuffledItems: IMapsData[];
