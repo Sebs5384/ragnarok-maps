@@ -1,4 +1,4 @@
-interface IMapsData {
+interface IMapData {
     id: number,
     name: string,
     slug: string,
@@ -7,4 +7,4 @@ interface IMapsData {
     cells: number
 };
 
-export default IMapsData;
+export default IMapData;
