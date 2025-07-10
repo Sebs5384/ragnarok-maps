@@ -2,6 +2,7 @@ import { shuffleItemsReducer, initialShuffleItemsState } from "./shuffleItemsRed
 import { mapsReducer, initialMapsState } from "./mapsReducer";
 import { paginatorReducer, initialPaginatorState } from "./paginatorReducer";
 import { searchboxReducer, initialSearchboxState } from "./searchboxReducer";
+import { mapReducer, initialMapState } from "./mapReducer";
 
 export {
     shuffleItemsReducer,
@@ -11,5 +12,7 @@ export {
     paginatorReducer,
     initialPaginatorState,
     searchboxReducer,
-    initialSearchboxState
+    initialSearchboxState,
+    mapReducer,
+    initialMapState
 };
