@@ -19,7 +19,7 @@ function useFetchMaps(search?: string, limit: number = 1000, offset: number = 0)
         };
 
         fetchMaps();
-    }, [search]);
+    }, [search, limit, offset]);
 
     return {
         loading: state.loading,
