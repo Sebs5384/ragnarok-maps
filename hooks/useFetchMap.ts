@@ -3,7 +3,7 @@ import { mapReducer, initialMapState } from "@/reducers/index";
 import { IMapState } from "@/reducers/interfaces/index";
 import { getMap } from "@/api/map";
 
-function useFetchMaps(id?: number, name?: string, slug?: string): IMapState {
+function useFetchMap(id?: number, name?: string, slug?: string): IMapState {
     const [state, dispatch] = useReducer(mapReducer, initialMapState);
 
     useEffect(() => {
@@ -27,3 +27,5 @@ function useFetchMaps(id?: number, name?: string, slug?: string): IMapState {
         error: state.error
     };
 };
+
+export default useFetchMap;
