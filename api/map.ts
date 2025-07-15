@@ -1,11 +1,11 @@
-import { IMapsData } from "@/reducers/interfaces/index";
+import { IMapData } from "@/reducers/interfaces/index";
 
 const BASE_URL = "http://localhost:3000";
 
 async function getMap(id?: number, name?: string, slug?: string) {
     if(!id && !name && !slug) return null;
     
-    const mapUrl =  `${BASE_URL}/api/map/${id || name || slug}`;
+    const mapUrl =  `${BASE_URL}/api/map?${id ? "id" : name ? "name" : "slug"}=${id || name || slug}`;
 
     try {
         const response = await fetch(mapUrl);
@@ -14,7 +14,7 @@ async function getMap(id?: number, name?: string, slug?: string) {
             throw new Error(error);
         };
 
-        const map = await response.json() as IMapsData;
+        const map = await response.json() as IMapData;
 
         return map;
     } catch (error) {
