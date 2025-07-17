@@ -11,8 +11,8 @@ function Grid(): React.ReactElement {
     return (
         <section className={styles.mapsSection}>
                 {
-                    mapsInPage?.map(({ id, name }) => 
-                        <GridTile id={id} name={name} key={id} />
+                    mapsInPage?.map(({ id, name, slug }) => 
+                        <GridTile id={id} name={name} key={id} slug={slug} />
                     )
                 }
         </section>
