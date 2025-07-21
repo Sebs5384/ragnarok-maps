@@ -27,7 +27,7 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
                                     <div className={styles.mapIconContainer}>
                                         <Image className={styles.mapInfoIcon} src={`/img/midgard_map.png`} alt={`${map.name}`} fill></Image>
                                     </div>
-                                    <strong>Map name: {map.name}</strong>
+                                    <strong>Name: {map.name}</strong>
                                 </div>
                                 <div className={styles.infoContainer}>
                                     <div className={styles.mapIconContainer}>
@@ -43,11 +43,29 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
                                     </div>
                                     <strong>Map Width: {map.width}px</strong>
                                 </div>
-                                <div className={styles.lastInfoContainer}>
+                                <div className={styles.infoContainer}>
                                     <div className={styles.mapIconContainer}>
                                         <Image className={styles.mapInfoIcon} src={`/img/height_icon.png`} alt={`${map.name}`} fill></Image>
                                     </div>
                                     <strong>Map Height: {map.height}px</strong>
+                                </div>
+                            </div>
+                            <div className={styles.cordsSection}>
+                                <div>
+                                    <div className={styles.cordsInputSection}>
+                                        <div>
+                                            <strong>Cords X</strong>
+                                            <input className={styles.cordsInput} type="number" placeholder="X" />
+                                        </div>
+                                        <div>
+                                            <strong>Cords Y</strong>
+                                            <input className={styles.cordsInput} type="number" placeholder="Y" />
+                                        </div>
+                                    </div>
+                                    <div className={styles.cordsButtonSection}>
+                                        <button className={styles.cordsButton}>Locate</button>
+                                        <button className={styles.cordsButton}>Clear</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>     
