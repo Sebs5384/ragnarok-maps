@@ -52,20 +52,39 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
                             </div>
                             <div className={styles.cordsSection}>
                                 <div>
-                                    <div className={styles.cordsInputSection}>
+                                    <div className={styles.inputSection}>
                                         <div>
                                             <strong>Cords X</strong>
-                                            <input className={styles.cordsInput} type="number" placeholder="X" />
+                                            <input className={styles.mapCordsInput} type="number" placeholder="X" />
                                         </div>
                                         <div>
                                             <strong>Cords Y</strong>
-                                            <input className={styles.cordsInput} type="number" placeholder="Y" />
+                                            <input className={styles.mapCordsInput} type="number" placeholder="Y" />
                                         </div>
                                     </div>
                                     <div className={styles.cordsButtonSection}>
                                         <button className={styles.cordsButton}>Locate</button>
                                         <button className={styles.cordsButton}>Clear</button>
                                     </div>
+                                </div>
+                            </div>
+                            <div className={styles.urlSection}>
+                                <div>
+                                    <div className={styles.inputSection}>
+                                        <div>
+                                            <strong>URL</strong>
+                                            <input className={styles.mapCordsInput} type="text" placeholder="URL" />
+                                        </div>
+                                    </div>
+                                    <div className={styles.cordsButtonSection}>
+                                        <button className={styles.cordsButton}>Copy</button>
+                                        <button className={styles.cordsButton}>Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.shareSection}>
+                                <div>
+                                    <Image src={"/img/discord_logo.png"} alt="discord" width={100} height={100} />
                                 </div>
                             </div>
                         </div>     
