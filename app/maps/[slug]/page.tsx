@@ -73,7 +73,7 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
                                     <div className={styles.inputSection}>
                                         <div>
                                             <strong>URL</strong>
-                                            <input className={styles.mapCordsInput} type="text" placeholder="URL" />
+                                            <input className={styles.urlCordsInput} type="text" placeholder="URL" />
                                         </div>
                                     </div>
                                     <div className={styles.cordsButtonSection}>
@@ -83,8 +83,9 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
                                 </div>
                             </div>
                             <div className={styles.shareSection}>
-                                <div>
-                                    <Image src={"/img/discord_logo.png"} alt="discord" width={100} height={100} />
+                                <div>Share on Discord</div>
+                                <div className={styles.discordIconContainer}>
+                                    <Image className={styles.discordIcon} src={"/img/discord_icon.png"} alt="discord" fill />
                                 </div>
                             </div>
                         </div>     
