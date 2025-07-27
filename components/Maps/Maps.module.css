@@ -102,16 +102,16 @@
 .cordsSection {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.cordsInputSection {
+.inputSection {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-.cordsInput {
+.mapCordsInput {
     display: flex;
     padding: 0.2rem;
     background: white;
@@ -121,10 +121,15 @@
     -moz-appearance: textfield;
 }
 
-.cordsInput::-webkit-outer-spin-button,
-.cordsInput::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.urlCordsInput {
+    display: flex;
+    padding: 0.2rem;
+    width: 215%;
+    background: white;
+    color: black;
+    border-radius: 1%;
+    border: 2px solid white;
+    -moz-appearance: textfield;
 }
 
 .cordsButtonSection {
@@ -147,4 +152,41 @@
     border-color: black;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.urlSection {
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+}
+
+.shareSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.discordIconContainer { 
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.discordIcon {
+    filter: drop-shadow(0 0 5px white);
+    transition: filter 0.2s ease;
+}
+
+.discordIcon:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px white);
+}
+
+.mapCordsInput::-webkit-outer-spin-button,
+.urlCordsInput::-webkit-outer-spin-button,
+.mapCordsInput::-webkit-inner-spin-button,
+.urlCordsInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
