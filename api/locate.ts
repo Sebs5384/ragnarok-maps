@@ -2,7 +2,7 @@ const BASE_URL = "http://localhost:3000";
 
 async function getLocation(map: string, x: string, y: string): Promise<any> {
     if(!map || !x || !y) return null;
-    
+        
     const locateUrl =  `${BASE_URL}/api/locate-url`;
 
     try {
@@ -13,7 +13,7 @@ async function getLocation(map: string, x: string, y: string): Promise<any> {
             },
             body: JSON.stringify({ map, x, y })
         });
-        
+            
         if(!response.ok) {
             const error = await response.text();
             throw new Error(error);
@@ -23,7 +23,7 @@ async function getLocation(map: string, x: string, y: string): Promise<any> {
         return locationUrl;
     } catch (error) {
         throw new Error(`Something went wrong ${error}`);
-    }
+    };
 };
 
 export {

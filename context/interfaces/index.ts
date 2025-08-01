@@ -5,4 +5,11 @@ import IMapsProviderProps from "./IMapsProviderProps";
 import ISearchboxProviderProps from "./ISearchboxProviderProps";
 import IChildren from "./IChildren";
 
-export type { IHomeContextProps, IMapsContextProps, ISearchboxContextProps, IMapsProviderProps, ISearchboxProviderProps, IChildren };
+export type { 
+    IHomeContextProps, 
+    IMapsContextProps, 
+    ISearchboxContextProps, 
+    IMapsProviderProps, 
+    ISearchboxProviderProps, 
+    IChildren 
+};
