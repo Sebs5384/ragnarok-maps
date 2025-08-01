@@ -1,23 +1,34 @@
 import { NextResponse } from "next/server";
 import { readJsonFile, loadLocalImage, markMapImage } from "@/utils/general";
+import jwt from "jsonwebtoken";
+
+if(!process.env.JWT_SECRET) throw new Error("JWT_SECRET is not defined");
+const SECRET = process.env.JWT_SECRET;
 
 export async function GET(req: Request) {
     try {
         const { searchParams } = new URL(req.url);
-        const map = searchParams.get("map");
-        const x = searchParams.get("x");
-        const y = searchParams.get("y");
+        const token = searchParams.get("t");
 
-        const parsedX = parseInt(x || "");
-        const parsedY = parseInt(y || "");
+        if(!token) {
+            return NextResponse.json({ error: "Invalid token" }, { status: 400 });
+        };
     
-        if(!map) {
-            return NextResponse.json({ error: "Invalid map"}, { status: 400 });
+        let decoded: any;
+        try {
+            decoded = jwt.verify(token, SECRET ?? "") as unknown as {
+                x: string;
+                y: string;
+                map: string;
+            };
+        } catch (error) {
+            return NextResponse.json({ error: "Invalid token" }, { status: 400 });
         };
 
-        if(isNaN(parsedX) || isNaN(parsedY)) {
-            return NextResponse.json({ error: "invalid coordinates" }, { status: 400 });
-        };
+        const { x, y, map } = decoded;
+        const parsedX = parseInt(x);
+        const parsedY = parseInt(y);
+
         const mapImage = await loadLocalImage("maps", `${map}.png`);
         const mapMeta = readJsonFile("maps-meta.json");
         const mapData = mapMeta.find((m: { name: string }) => m.name === map);
