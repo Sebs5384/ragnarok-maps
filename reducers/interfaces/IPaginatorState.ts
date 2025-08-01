@@ -1,10 +1,10 @@
-import { IMapsData } from "./index";
+import { IMapData } from "./index";
 
 interface IPaginatorState {
     totalPages: number[] | null,
     currentPage: number,
     lastPage: number | null,
-    mapsInPage: IMapsData[] | null
+    mapsInPage: IMapData[] | null
 };
 
 export default IPaginatorState;
