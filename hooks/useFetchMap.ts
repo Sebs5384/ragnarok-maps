@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from "react";
 import { mapReducer, initialMapState } from "@/reducers/index";
 import { IMapState } from "@/reducers/interfaces/index";
-import { getMap } from "@/api/map";
+import { getMap } from "@/lib/map";
 
 function useFetchMap(id?: number, name?: string, slug?: string): IMapState {
     const [state, dispatch] = useReducer(mapReducer, initialMapState);

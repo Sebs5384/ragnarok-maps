@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getLocationToken } from "@/api/locate-token";
+import { getLocationToken } from "@/lib/locate-token";
 
 const BASE_URL = "http://localhost:3000";
 

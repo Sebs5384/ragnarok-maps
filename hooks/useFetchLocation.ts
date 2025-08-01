@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { locationReducer, initialLocationState } from "@/reducers/index";
 import { ILocationState } from "@/reducers/interfaces/index";
-import { getLocation } from "@/api/locate";
+import { getLocation } from "@/lib/locate";
 
 function useFetchLocation(map?: string, x?: string, y?: string): ILocationState {
     const [state, dispatch] = useReducer(locationReducer, initialLocationState);
