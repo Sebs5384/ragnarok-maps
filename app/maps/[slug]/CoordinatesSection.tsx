@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { IMapData } from "@/reducers/interfaces/index";
 
-function CoordinatesSeciton({ map, styles }: { map: IMapData, styles: any }): React.ReactElement {
+function CoordinatesSection({ map, styles, getLocation }: { map: IMapData, styles: any, getLocation: (map: string, x: string, y: string) => void }): React.ReactElement {
     return (
         <section>
             <div className={styles.mapSection}>
@@ -51,7 +51,7 @@ function CoordinatesSeciton({ map, styles }: { map: IMapData, styles: any }): Re
                                 </div>
                             </div>
                             <div className={styles.cordsButtonSection}>
-                                <button className={styles.cordsButton}>Locate</button>
+                                <button className={styles.cordsButton} onClick={() => getLocation(map.name, String((document.querySelector(`.${styles.mapCordsInput}`) as HTMLInputElement).value), String((document.querySelectorAll(`.${styles.mapCordsInput}`)[1] as HTMLInputElement).value))}>Locate</button>
                                 <button className={styles.cordsButton}>Clear</button>
                             </div>
                         </div>
@@ -82,4 +82,4 @@ function CoordinatesSeciton({ map, styles }: { map: IMapData, styles: any }): Re
     )
 };
 
-export default CoordinatesSeciton;
+export default CoordinatesSection;
