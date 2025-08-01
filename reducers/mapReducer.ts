@@ -24,6 +24,13 @@ function mapReducer(state: IMapState = initialMapState, action: IAction): IMapSt
                 map: payload,
                 error: null
             } as IMapState;
+        case "FETCH_FAILURE":
+            return {
+                ...state,
+                loading: false,
+                map: null,
+                error: payload
+            }
         default:
             return state;
     };
