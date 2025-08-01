@@ -2,10 +2,10 @@ import { NextResponse } from "next/server";
 import { readJsonFile, loadLocalImage, markMapImage } from "@/utils/general";
 import jwt from "jsonwebtoken";
 
-if(!process.env.JWT_SECRET) throw new Error("JWT_SECRET is not defined");
-const SECRET = process.env.JWT_SECRET;
-
 export async function GET(req: Request) {
+    const SECRET = process.env.JWT_SECRET;
+    if(SECRET) throw new Error("JWT_SECRET is not defined");
+
     try {
         const { searchParams } = new URL(req.url);
         const token = searchParams.get("t");
