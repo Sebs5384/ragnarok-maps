@@ -1,8 +1,8 @@
-import { IMapsData } from "@/reducers/interfaces/index";
+import { IMapData } from "@/reducers/interfaces/index";
 
 const BASE_URL = "http://localhost:3000";
 
-async function getMaps(search?: string, limit: number = 1000, offset: number = 0): Promise<IMapsData[] | null> {
+async function getMaps(search?: string, limit: number = 1000, offset: number = 0): Promise<IMapData[] | null> {
     if(limit === null) return null;
 
     const params = new URLSearchParams({
@@ -21,7 +21,7 @@ async function getMaps(search?: string, limit: number = 1000, offset: number = 0
             throw new Error(error);
         };
 
-        const maps = await response.json() as IMapsData[];
+        const maps = await response.json() as IMapData[];
         return maps;
     } catch (error) {
         throw new Error(`Something went wrong ${error}`);
