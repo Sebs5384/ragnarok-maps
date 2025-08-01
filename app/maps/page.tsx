@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
-
-const MapsClient = dynamic(() => import("./MapsClient"), { ssr: false });
+import MapsClient from "./MapsClient";
 
 function Maps(): React.ReactElement {
     return (
