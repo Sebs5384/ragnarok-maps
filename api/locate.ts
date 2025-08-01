@@ -3,7 +3,7 @@ const BASE_URL = "http://localhost:3000";
 async function getLocation(map: string, x: string, y: string): Promise<any> {
     if(!map || !x || !y) return null;
         
-    const locateUrl =  `${BASE_URL}/api/locate-url`;
+    const locateUrl =  `${BASE_URL}/api/location-url`;
 
     try {
         const response = await fetch(locateUrl, {

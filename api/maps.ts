@@ -12,7 +12,7 @@ async function getMaps(search?: string, limit: number = 1000, offset: number = 0
     
     if(search) params.append("search", search);
 
-    const mapsUrl = `${BASE_URL}/api/maps?${params.toString()}`;
+    const mapsUrl = `${BASE_URL}/api/total-maps?${params.toString()}`;
 
     try {
         const response = await fetch(mapsUrl);

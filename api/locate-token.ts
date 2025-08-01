@@ -1,7 +1,7 @@
 const BASE_URL = "http://localhost:3000";
 
 async function getLocationToken(map: string, x: string, y: string): Promise<any> {
-    const locateUrl = `${BASE_URL}/api/locate-token`;
+    const locateUrl = `${BASE_URL}/api/token`;
 
     const headers = new Headers({
         "Content-Type": "application/json",
