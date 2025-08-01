@@ -1,19 +1,26 @@
 const BASE_URL = "http://localhost:3000";
 
-async function getLocation(token: string): Promise<any> {
-    if(!token) return null;
+async function getLocation(map: string, x: string, y: string): Promise<any> {
+    if(!map || !x || !y) return null;
     
-    const locateUrl =  `${BASE_URL}/api/locate?t=${token}`;
+    const locateUrl =  `${BASE_URL}/api/locate-url`;
 
     try {
-        const response = await fetch(locateUrl);
+        const response = await fetch(locateUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ map, x, y })
+        });
+        
         if(!response.ok) {
             const error = await response.text();
             throw new Error(error);
-        }
+        };
 
-        const location = await response.json();
-        return location;
+        const locationUrl = await response.json();
+        return locationUrl;
     } catch (error) {
         throw new Error(`Something went wrong ${error}`);
     }
