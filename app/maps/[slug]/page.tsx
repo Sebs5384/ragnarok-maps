@@ -1,13 +1,22 @@
-"use client";
+'use client';
 
-import { use } from "react";
-import { useFetchMap } from "@/hooks/index";
-import CoordinatesSeciton from "./CoordinatesSection";
-import styles from "@/components/Maps/Maps.module.css";
+import { useEffect, useState } from 'react';
+import { useFetchMap, useFetchLocation } from '@/hooks/index';
+import CoordinatesSection from './CoordinatesSection';
+import styles from '@/components/Maps/Maps.module.css';
 
 function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = use(params);
-    const { loading, map, error } = useFetchMap(undefined, undefined, slug);
+    const [slug, setSlug] = useState<string | null>(null);
+
+    const { loading, map, error } = useFetchMap(undefined, undefined, slug || undefined);
+    const { loadingLocation, locationUrl, errorLocation, handleGetLocation } = useFetchLocation();
+    console.log(`locationUrl: ${locationUrl}`);
+
+    useEffect(() => {
+        params.then(({ slug }) => {
+            setSlug(slug);
+        });
+    }, [params]);
 
     return (
         <>
@@ -16,12 +25,12 @@ function MapDetails({ params }: { params: Promise<{ slug: string }> }) {
             ) : error ? (
                 <p>{error}</p>
             ) : map ? (
-                <CoordinatesSeciton map={map} styles={styles} />
+                <CoordinatesSection map={map} styles={styles} getLocation={handleGetLocation} />
             ) : (
                 <p>Map not found</p>
             )}
         </>
     );
-};
+}
 
 export default MapDetails;
