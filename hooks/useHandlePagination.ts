@@ -1,8 +1,8 @@
 import { useEffect, useReducer } from "react";
 import { paginatorReducer, initialPaginatorState } from "@/reducers/index";
-import { IMapsData, IPaginatorState } from "@/reducers/interfaces/index";
+import { IMapData, IPaginatorState } from "@/reducers/interfaces/index";
 
-function useHandlePagination({ limit, offset, items}: { limit: number, offset: number, items: IMapsData[] }): IPaginatorState {
+function useHandlePagination({ limit, offset, items}: { limit: number, offset: number, items: IMapData[] }): IPaginatorState {
     const [state, dispatch] = useReducer(paginatorReducer, initialPaginatorState);
 
     useEffect(() => {

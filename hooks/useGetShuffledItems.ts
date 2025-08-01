@@ -1,9 +1,9 @@
 import { useEffect, useReducer } from "react";
 import { shuffleItemsReducer, initialShuffleItemsState } from "@/reducers/index";
-import { IMapsData } from "@/reducers/interfaces/index";
+import { IMapData } from "@/reducers/interfaces/index";
 import { IItems } from "./interfaces/index";
 
-function useGetShuffledItems(items: IMapsData[], amount: number): IItems {
+function useGetShuffledItems(items: IMapData[], amount: number): IItems {
     const [state, dispatch] = useReducer(shuffleItemsReducer, initialShuffleItemsState);	
 
     useEffect(() => {
