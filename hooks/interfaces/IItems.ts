@@ -1,7 +1,7 @@
-import { IMapsData } from "@/reducers/interfaces/index";
+import { IMapData } from "@/reducers/interfaces/index";
 
 interface Items {
-    items: IMapsData[]
+    items: IMapData[]
     hasShuffle: boolean
 };
 
