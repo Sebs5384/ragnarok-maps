@@ -19,7 +19,7 @@ async function getLocationToken(map: string, x: string, y: string): Promise<any>
         throw new Error(error);
     }
 
-    const token = await response.json();
+    const { token } = await response.json();
     return token;
 };
 
