@@ -11,7 +11,7 @@ function GridTile({id, name, slug}: {id: number, name: string, slug: string}): R
                 <strong className={styles.tileText}>#{id} - {name}</strong>
             </div>
             <div className={styles.tileContainer}>
-                <Link href={`http://localhost:3000/maps/${slug}`}>
+                <Link href={`/maps/${slug}`}>
                     <Image 
                         src={mapImages[`${name}`]}
                         alt={`map-${id}`}
