@@ -3,6 +3,7 @@ import { getLocationToken } from "@/lib/locate-token";
 
 export async function POST(req: Request) {
   try {
+    const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
     const BOT_KEY = process.env.BOT_KEY;
     const authHeader = req.headers.get("Auth");
 
@@ -17,8 +18,7 @@ export async function POST(req: Request) {
     };
 
     const token = await getLocationToken(map, x, y);
-    const locationUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/locate?t=${token}`;
-    console.log(locationUrl);
+    const locationUrl = `${BASE_URL}/api/locate?t=${token}`;
 
     return NextResponse.json({ locationUrl }, { status: 200 });
   } catch (error) {
