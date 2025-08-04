@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 export async function GET(req: Request) {
     const SECRET = process.env.JWT_SECRET;
-    if(SECRET) throw new Error("JWT_SECRET is not defined");
+    if(!SECRET) throw new Error("JWT_SECRET is not defined");
 
     try {
         const { searchParams } = new URL(req.url);

@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
 import { getLocationToken } from "@/lib/locate-token";
 
-const BOT_KEY = process.env.BOT_KEY;
-
 export async function POST(req: Request) {
   try {
-    const authHeader = req.headers.get("auth");
+    const BOT_KEY = process.env.BOT_KEY;
+    const authHeader = req.headers.get("Auth");
 
-    if (!authHeader || authHeader !== `Bearer ${BOT_KEY}`) {
+    if (!authHeader || authHeader !== BOT_KEY) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     };
 
@@ -19,6 +18,7 @@ export async function POST(req: Request) {
 
     const token = await getLocationToken(map, x, y);
     const locationUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/locate?t=${token}`;
+    console.log(locationUrl);
 
     return NextResponse.json({ locationUrl }, { status: 200 });
   } catch (error) {
