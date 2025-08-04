@@ -1,6 +1,6 @@
 import { IMapData } from "@/reducers/interfaces/index";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 async function getMaps(search?: string, limit: number = 1000, offset: number = 0): Promise<IMapData[] | null> {
     if(limit === null) return null;

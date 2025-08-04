@@ -1,6 +1,6 @@
 import { IMapData } from "@/reducers/interfaces/index";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 async function getMap(id?: number, name?: string, slug?: string) {
     if(!id && !name && !slug) return null;

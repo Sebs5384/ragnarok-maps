@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 
-const SECRET = process.env.JWT_SECRET;
-
 export async function POST(req: Request) {  
     try {
+        const SECRET = process.env.JWT_SECRET;
         const key = req.headers.get("key")
         if(key !== process.env.LOCATE_KEY) {
             return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

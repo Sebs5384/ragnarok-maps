@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 async function getLocationToken(map: string, x: string, y: string): Promise<any> {
     const locateUrl = `${BASE_URL}/api/token`;
