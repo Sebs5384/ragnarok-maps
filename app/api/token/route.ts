@@ -29,7 +29,7 @@ export async function POST(req: Request) {
         };
 
         const payload = { map, x, y };
-        const token = jwt.sign(payload, SECRET ?? "", { expiresIn: "10m" });
+        const token = jwt.sign(payload, SECRET ?? "", { expiresIn: "24h" });
 
         return NextResponse.json({ token });
     } catch (error) {
