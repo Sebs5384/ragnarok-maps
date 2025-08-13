@@ -569,7 +569,7 @@ import img564 from "@/public/maps/payon_in02.png";
 import img565 from "@/public/maps/payon_in03.png";
 import img566 from "@/public/maps/poring_w01.png";
 import img567 from "@/public/maps/poring_w02.png";
-import img568 from "@/public/maps/pprontera.png";
+import img568 from "@/public/maps/prontera.png";
 import img569 from "@/public/maps/prt_are01.png";
 import img570 from "@/public/maps/prt_are_in.png";
 import img571 from "@/public/maps/prt_cas.png";
@@ -1375,7 +1375,7 @@ const mapImages: Record<string, StaticImageData> = {
   "payon_in03": img565,
   "poring_w01": img566,
   "poring_w02": img567,
-  "pprontera": img568,
+  "prontera": img568,
   "prt_are01": img569,
   "prt_are_in": img570,
   "prt_cas": img571,
